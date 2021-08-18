@@ -1,0 +1,22 @@
+------------------------------------------------------------------------------------------------------------------------
+	RESOURCES:
+------------------------------------------------------------------------------------------------------------------------
+TODOS
+	-id
+	-todo
+	-isCompleted
+
+------------------------------------------------------------------------------------------------------------------------
+	ROUTING
+------------------------------------------------------------------------------------------------------------------------
+GET	   	/api/todo			- get todo list
+GET		/api/todo/:id		- if param exist => matching todo => get todo
+POST	/api/todo			- create/add new monkey
+			-todo			- validation all data if OK generate id and save new todo
+PUT		/api/todo/:id		- update/edit todo with id
+			-todo			- data for update if exist => update and save => get updated todo
+        	-isCompleted
+DELETE	/api/todo/:id		- delete todo with id
+			-id
+POST	/api/todo/search	- search
+			-search			- search param
